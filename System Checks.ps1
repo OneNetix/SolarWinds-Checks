@@ -81,5 +81,5 @@ $getDetailedNode = Get-SwisData $swis "SELECT N.NodeID, N.ObjectSubType, N.IPAdd
                                         ORDER BY N.EngineID"
 
 #Export query to desired loction with a time stamp to keep seperate
-$getDetailedNode | export-csv "C:\Scripts\Automation\logs\Node checks.csv $timestamp.csv"
-Write-Host "Poller checks complete, this has been exported to C:\Scripts\Automation\logs\Node checks.csv $timestamp.csv"
+$getDetailedNode | export-csv "C:\Scripts\Automation\logs\Node checks $timestamp.csv"
+Write-Host "Poller checks complete, this has been exported to C:\Scripts\Automation\logs\Node checks $timestamp.csv"
